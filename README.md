@@ -19,6 +19,11 @@ Timelapse
 
 If you dont want to use any of above, then use tl-arduinogopropano.ino file. You will need a autoexec.ash hack on the gopro camera to be sync correctly with the board.
 
+What it does
+------------
+
+The arduino rotates a servo 360 degrees, between the degrees, 6 times it stop to let the gopro take a pic, via wifi, herobus or timelapse.
+
 Stitching
 ----------
 
