@@ -15,9 +15,9 @@ void setup()
 { 
   myservo.attach(9);   
 } 
- 
- 
-
+ {
+ delay(6000)
+ }
 {
   for(pos = 0; pos < 45; pos += 1)  
   {                                 
