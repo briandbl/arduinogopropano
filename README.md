@@ -32,4 +32,5 @@ You can stitch the gopro pics using photoshop to make a panoramic strip. If you 
 * Select the gopro pics you copied before.
 * Wait...
 
+The pano you create with Photoshop is not accepted by Photosynth, the pano you create with Photoshop is only for web embedding or custom viewer like KRPano.
 Enjoy! :octocat:
