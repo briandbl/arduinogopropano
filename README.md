@@ -6,7 +6,7 @@ A Arduino script to take panoramic photos with a GoPro camera and a servo.
 Wifi
 ----
 
-You will need a arduino board and the wifi shield.
+You will need a arduino yun (you can use any other arduino with a wifi shield, but I have a arduino yun for testing¡)
 The file that controls the gopro camera via wifi is wifi-arduinogopropano.ino
 
 Timelapse
