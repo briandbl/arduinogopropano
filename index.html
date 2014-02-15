@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Arduinogopropano : A Arduino script to take panoramic photos with a GoPro camera and a servo." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Arduinogopropano</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/KonradIT/arduinogopropano">View on GitHub</a>
+
+          <h1 id="project_title">Arduinogopropano</h1>
+          <h2 id="project_tagline">A Arduino script to take panoramic photos with a GoPro camera and a servo.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/KonradIT/arduinogopropano/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/KonradIT/arduinogopropano/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="arduino-gopro-pano" class="anchor" href="#arduino-gopro-pano"><span class="octicon octicon-link"></span></a>Arduino GoPro Pano</h1>
+
+<p>Take panoramic pictures using a Arduino and a GoPro camera.</p>
+
+<p>Use Wifi or autoexec.ash to trigger the camera.</p>
+
+<h3>
+<a name="code" class="anchor" href="#code"><span class="octicon octicon-link"></span></a>Code:</h3>
+
+<pre>
+// Arduino GoPro Pano by Konrad Iturbe (GitHub @konradit) www.chernowii.com
+// Wiring:
+// LED to pin 13
+// Servo to pin 9
+
+#include &lt;Servo.h&gt; 
+int led = 13; 
+Servo myservo;  // create servo object to control a servo 
+                 
+ 
+void <b>setup</b>() 
+{ 
+  myservo.attach(9); 
+pinMode(led, OUTPUT);
+myservo.write(0); // attaches the servo on pin 9 to the servo object 
+} 
+ 
+ 
+void <b>loop</b>() 
+{ 
+  digitalWrite(led, HIGH);                           
+    myservo.write(45);
+    
+    delay(2500);          
+digitalWrite(led, LOW);
+delay(15);// waits 15ms for the servo to reach the position                             
+    digitalWrite(led, HIGH);
+    myservo.write(90);              
+       
+    delay(2500);          
+digitalWrite(led, LOW);
+delay(15);// waits 15ms for the servo to reach the position 
+  digitalWrite(led, HIGH);
+  myservo.write(135);            
+      
+    delay(2500);          
+digitalWrite(led, LOW);
+delay(15);
+  digitalWrite(led, HIGH); 
+    myservo.write(180);              
+     
+    delay(3500);          
+digitalWrite(led, LOW);
+delay(15);
+} 
+
+</pre>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Arduinogopropano maintained by <a href="https://github.com/KonradIT">KonradIT</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
