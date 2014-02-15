@@ -40,53 +40,52 @@
 
 <h3>
 <a name="code" class="anchor" href="#code"><span class="octicon octicon-link"></span></a>Code:</h3>
-
 <pre>
-// Arduino GoPro Pano by Konrad Iturbe (GitHub @konradit) www.chernowii.com
-// Wiring:
-// LED to pin 13
-// Servo to pin 9
+<span style="color: #7E7E7E;">//&nbsp;Arduino&nbsp;GoPro&nbsp;Pano&nbsp;by&nbsp;Konrad&nbsp;Iturbe&nbsp;(GitHub&nbsp;@konradit)&nbsp;www.chernowii.com</span>
+<span style="color: #7E7E7E;">//&nbsp;Wiring:</span>
+<span style="color: #7E7E7E;">//&nbsp;LED&nbsp;to&nbsp;pin&nbsp;13</span>
+<span style="color: #7E7E7E;">//&nbsp;Servo&nbsp;to&nbsp;pin&nbsp;9</span>
 
-#include &lt;Servo.h&gt; 
-int led = 13; 
-Servo myservo;  // create servo object to control a servo 
-                 
- 
-void <b>setup</b>() 
-{ 
-  myservo.attach(9); 
-pinMode(led, OUTPUT);
-myservo.write(0); // attaches the servo on pin 9 to the servo object 
-} 
- 
- 
-void <b>loop</b>() 
-{ 
-  digitalWrite(led, HIGH);                           
-    myservo.write(45);
-    
-    delay(2500);          
-digitalWrite(led, LOW);
-delay(15);// waits 15ms for the servo to reach the position                             
-    digitalWrite(led, HIGH);
-    myservo.write(90);              
-       
-    delay(2500);          
-digitalWrite(led, LOW);
-delay(15);// waits 15ms for the servo to reach the position 
-  digitalWrite(led, HIGH);
-  myservo.write(135);            
-      
-    delay(2500);          
-digitalWrite(led, LOW);
-delay(15);
-  digitalWrite(led, HIGH); 
-    myservo.write(180);              
-     
-    delay(3500);          
-digitalWrite(led, LOW);
-delay(15);
-} 
+#include&nbsp;&lt;<span style="color: #CC6600;">Servo</span>.h&gt; 
+<span style="color: #CC6600;">int</span> led = 13; 
+<span style="color: #CC6600;">Servo</span> myservo;  <span style="color: #7E7E7E;">// create servo object to control a servo </span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;
+<span style="color: #CC6600;">void</span> <span style="color: #CC6600;"><b>setup</b></span>() 
+{&nbsp;
+&nbsp;&nbsp;myservo.<span style="color: #CC6600;">attach</span>(9); 
+<span style="color: #CC6600;">pinMode</span>(led, <span style="color: #006699;">OUTPUT</span>);
+myservo.<span style="color: #CC6600;">write</span>(0); <span style="color: #7E7E7E;">// attaches the servo on pin 9 to the servo object </span>
+}&nbsp;
+&nbsp;
+&nbsp;
+<span style="color: #CC6600;">void</span> <span style="color: #CC6600;"><b>loop</b></span>() 
+{&nbsp;
+&nbsp;&nbsp;<span style="color: #CC6600;">digitalWrite</span>(led, <span style="color: #006699;">HIGH</span>);                           
+&nbsp;&nbsp;&nbsp;&nbsp;myservo.<span style="color: #CC6600;">write</span>(45);
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #CC6600;">delay</span>(2500);          
+<span style="color: #CC6600;">digitalWrite</span>(led, <span style="color: #006699;">LOW</span>);
+<span style="color: #CC6600;">delay</span>(15);<span style="color: #7E7E7E;">// waits 15ms for the servo to reach the position                             </span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #CC6600;">digitalWrite</span>(led, <span style="color: #006699;">HIGH</span>);
+&nbsp;&nbsp;&nbsp;&nbsp;myservo.<span style="color: #CC6600;">write</span>(90);              
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #CC6600;">delay</span>(2500);          
+<span style="color: #CC6600;">digitalWrite</span>(led, <span style="color: #006699;">LOW</span>);
+<span style="color: #CC6600;">delay</span>(15);<span style="color: #7E7E7E;">// waits 15ms for the servo to reach the position </span>
+&nbsp;&nbsp;<span style="color: #CC6600;">digitalWrite</span>(led, <span style="color: #006699;">HIGH</span>);
+&nbsp;&nbsp;myservo.<span style="color: #CC6600;">write</span>(135);            
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #CC6600;">delay</span>(2500);          
+<span style="color: #CC6600;">digitalWrite</span>(led, <span style="color: #006699;">LOW</span>);
+<span style="color: #CC6600;">delay</span>(15);
+&nbsp;&nbsp;<span style="color: #CC6600;">digitalWrite</span>(led, <span style="color: #006699;">HIGH</span>); 
+&nbsp;&nbsp;&nbsp;&nbsp;myservo.<span style="color: #CC6600;">write</span>(180);              
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #CC6600;">delay</span>(3500);          
+<span style="color: #CC6600;">digitalWrite</span>(led, <span style="color: #006699;">LOW</span>);
+<span style="color: #CC6600;">delay</span>(15);
+}&nbsp;
 
 </pre>
       </section>
