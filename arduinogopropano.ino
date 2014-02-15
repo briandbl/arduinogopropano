@@ -1,4 +1,7 @@
 // Arduino GoPro Pano by Konrad Iturbe (GitHub @konradit) www.chernowii.com
+// Wiring:
+// LED to pin 13
+// Servo to pin 9
 
 #include <Servo.h> 
 int led = 13; 
